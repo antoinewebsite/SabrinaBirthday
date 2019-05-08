@@ -1,0 +1,631 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js" __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone">
+	<head>
+		<style>
+            /* If you can't see it just hit space in here*/
+            .body {
+                font-family:'Wendy One', sans-serif;
+            }
+			
+			/* body {
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
+  background-image: -webkit-radial-gradient(#374566, #010203);
+  background-image: -moz-radial-gradient(#374566, #010203);
+  background-image: -o-radial-gradient(#374566, #010203);
+  background-image: radial-gradient(#374566, #010203);
+} */
+            .balloon {
+                width: 738px;
+                margin: 0 auto;
+                padding-top: 30px;
+                position: relative;
+            }
+            .balloon > div {
+                width: 104px;
+                height: 140px;
+                background: rgba(182, 15, 97, 0.9);
+                border-radius: 0;
+                border-radius: 80% 80% 80% 80%;
+                margin: 0 auto;
+                position: absolute;
+                padding: 10px;
+                box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+                -webkit-transform-origin: bottom center;
+            }
+            .balloon > div:nth-child(1) {
+                background: rgba(182, 15, 97, 0.9);
+                left: 0;
+                box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+                -webkit-animation: balloon1 6s ease-in-out infinite;
+                -moz-animation: balloon1 6s ease-in-out infinite;
+                -o-animation: balloon1 6s ease-in-out infinite;
+                animation: balloon1 6s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(1):before {
+                color: rgba(182, 15, 97, 0.9);
+            }
+            .balloon > div:nth-child(2) {
+                background: rgba(242, 112, 45, 0.9);
+                left: 120px;
+                box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+                -webkit-animation: balloon2 6s ease-in-out infinite;
+                -moz-animation: balloon2 6s ease-in-out infinite;
+                -o-animation: balloon2 6s ease-in-out infinite;
+                animation: balloon2 6s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(2):before {
+                color: rgba(242, 112, 45, 0.9);
+            }
+            .balloon > div:nth-child(3) {
+                background: rgba(45, 181, 167, 0.9);
+                left: 240px;
+                box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+                -webkit-animation: balloon4 6s ease-in-out infinite;
+                -moz-animation: balloon4 6s ease-in-out infinite;
+                -o-animation: balloon4 6s ease-in-out infinite;
+                animation: balloon4 6s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(3):before {
+                color: rgba(45, 181, 167, 0.9);
+            }
+            .balloon > div:nth-child(4) {
+                background: rgba(190, 61, 244, 0.9);
+                left: 360px;
+                box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+                -webkit-animation: balloon1 5s ease-in-out infinite;
+                -moz-animation: balloon1 5s ease-in-out infinite;
+                -o-animation: balloon1 5s ease-in-out infinite;
+                animation: balloon1 5s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(4):before {
+                color: rgba(190, 61, 244, 0.9);
+            }
+            .balloon > div:nth-child(5) {
+                background: rgba(180, 224, 67, 0.9);
+                left: 480px;
+                box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+                -webkit-animation: balloon3 5s ease-in-out infinite;
+                -moz-animation: balloon3 5s ease-in-out infinite;
+                -o-animation: balloon3 5s ease-in-out infinite;
+                animation: balloon3 5s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(5):before {
+                color: rgba(180, 224, 67, 0.9);
+            }
+            .balloon > div:nth-child(6) {
+                background: rgba(242, 194, 58, 0.9);
+                left: 600px;
+                box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+                -webkit-animation: balloon2 3s ease-in-out infinite;
+                -moz-animation: balloon2 3s ease-in-out infinite;
+                -o-animation: balloon2 3s ease-in-out infinite;
+                animation: balloon2 3s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(6):before {
+                color: rgba(242, 194, 58, 0.9);
+            }
+            .balloon > div:before {
+                color: rgba(182, 15, 97, 0.9);
+                position: absolute;
+                bottom: -11px;
+                left: 52px;
+                content:"▲";
+                font-size: 1em;
+            }
+            .span {
+                font-size: 4.8em;
+                color: white;
+                position: relative;
+                top: 30px;
+                left: 50%;
+                margin-left: -27px;
+            }
+			.name_birthday {
+                position: relative;
+                top: 200px;
+                text-align: center;
+                color: #ff7373;
+                font-size: 3.5em;
+            }
+
+            /*BALLOON 1 4*/
+            @-webkit-keyframes balloon1 {
+                0%, 100% {
+                    -webkit-transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    -webkit-transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            @-moz-keyframes balloon1 {
+                0%, 100% {
+                    -moz-transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    -moz-transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            @-o-keyframes balloon1 {
+                0%, 100% {
+                    -o-transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    -o-transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            @keyframes balloon1 {
+                0%, 100% {
+                    transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            /* BAllOON 2 5*/
+            @-webkit-keyframes balloon2 {
+                0%, 100% {
+                    -webkit-transform: translateY(0) rotate(6eg);
+                }
+                50% {
+                    -webkit-transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            @-moz-keyframes balloon2 {
+                0%, 100% {
+                    -moz-transform: translateY(0) rotate(6deg);
+                }
+                50% {
+                    -moz-transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            @-o-keyframes balloon2 {
+                0%, 100% {
+                    -o-transform: translateY(0) rotate(6deg);
+                }
+                50% {
+                    -o-transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            @keyframes balloon2 {
+                0%, 100% {
+                    transform: translateY(0) rotate(6deg);
+                }
+                50% {
+                    transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            /* BAllOON 0*/
+            @-webkit-keyframes balloon3 {
+                0%, 100% {
+                    -webkit-transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            @-moz-keyframes balloon3 {
+                0%, 100% {
+                    -moz-transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    -moz-transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            @-o-keyframes balloon3 {
+                0%, 100% {
+                    -o-transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    -o-transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            @keyframes balloon3 {
+                0%, 100% {
+                    transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            /* BAllOON 3*/
+            @-webkit-keyframes balloon4 {
+                0%, 100% {
+                    -webkit-transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    -webkit-transform: translate(-15px, 20px) rotate(10deg);
+                }
+            }
+            @-moz-keyframes balloon4 {
+                0%, 100% {
+                    -moz-transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    -moz-transform: translate(-15px, 10px) rotate(10deg);
+                }
+            }
+            @-o-keyframes balloon4 {
+                0%, 100% {
+                    -o-transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    -o-transform: translate(-15px, 10px) rotate(10deg);
+                }
+            }
+            @keyframes balloon4 {
+                0%, 100% {
+                    transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    transform: translate(-15px, 10px) rotate(10deg);
+                }
+            }
+		</style>
+		
+		<script>
+            window.open = function() {};
+            window.print = function() {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function() {};
+            }
+        </script>
+        <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+        <meta content="clickberry-extension-here">
+        <meta content="clickberry-extension-here">
+        <!-- <style type="text/css"></style> -->
+        <!-- <style type="text/css"></style> -->
+    <style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
+    
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="CodePixar">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Antoine & Sabrina</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel='stylesheet' href='css/simplelightbox.min.css' >
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/main.css">
+
+		</head>
+		<body>
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<div class="container">
+					<div class="header-wrap">
+						<div class="header-top d-flex justify-content-between align-items-center">
+							<div class="logo">
+								<!-- <a href="#home"><img src="img/coeur.png" alt=""></a> -->
+							</div>
+							<div class="main-menubar d-flex align-items-center">
+								<nav class="hide">
+									<a href="#home">Home</a>
+									<a href="#beautifulGirl">Beautiful girl</a>
+									<a href="#gallery">Gallery</a>
+									<!-- <a href="#blog">Blog</a> -->
+									<a href="#loveYou">Love You</a>
+									<!-- <a href="generic.html">Generic</a> -->
+									<!-- <a href="elements.html">Elements</a> -->
+								</nav>
+								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End Header Area -->
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">			
+				<div class="slider"><div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				        <div class="carousel-inner" role="listbox">
+				          <!-- Slide One - Set the background image for this slide in the line below -->
+				          <div class="carousel-item active" style="background-image: url('img/slide1.jpg')">
+				            <div class="carousel-caption d-md-block">
+				              <h2 class="text-uppercase">Antoine & Sabrina's Gallery</h2>
+				              <p>
+								This gallery group all the pictures of Antoine & Sabrina <br>Every moments share together, every smiles, all happiness, ad so on, . . .
+								</p>
+				            </div>
+				          </div>
+				          <!-- Slide Two - Set the background image for this slide in the line below -->
+				          <div class="carousel-item" style="background-image: url('img/slide3.jpg')">
+				            <div class="carousel-caption d-md-block">
+				              <h2 class="text-uppercase">Antoine & Sabrina's Gallery</h2>
+				              <p>
+								This gallery group all the pictures of Antoine & Sabrina <br>Every moments share together, every smiles, all happiness, ad so on, . . .
+				              </p>
+				            </div>
+				          </div>
+				          <!-- Slide Three - Set the background image for this slide in the line below -->
+				          <div class="carousel-item" style="background-image: url('img/slide2.jpg')">
+				            <div class="carousel-caption d-md-block">
+				              <h2 class="text-uppercase">Antoine & Sabrina's Gallery</h2>
+				              <p>
+								This gallery group all the pictures of Antoine & Sabrina <br>Every moments share together, every smiles, all happiness, ad so on, . . .
+				              </p>
+				            </div>
+				          </div>
+				        </div>
+				        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				          <span class="sr-only">Previous</span>
+				        </a>
+				        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				          <span class="sr-only">Next</span>
+				        </a>
+				      </div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+			<div class="whole-wrap section-gap body">
+				<div class="container">
+					<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+					<div class="container">
+						<div class="balloon">
+							<div><span class="span">☺</span>
+							</div>
+							<div><span class="span">B</span>
+							</div>
+							<div><span class="span">D</span>
+							</div>
+							<div><span class="span">A</span>
+							</div>
+							<div><span class="span">Y</span>
+							</div>
+							<div><span class="span">!</span>
+							</div>
+						</div>
+						<h1 class="name_birthday">Sabrina</h1>
+					</div>
+					<script>
+						if (document.location.search.match(/type=embed/gi)) {
+							window.parent.postMessage('resize', "*");
+						}
+					</script>
+				</div>
+			</div>
+
+			<!-- Start About Area -->
+			<section class="About-area section-gap" id="beautifulGirl">
+				<div class="container">
+					<hr style="margin-top: 50px; margin-bottom: 100px;">
+					<div class="row d-flex align-items-center">
+						<div class="col-lg-6 about-left">
+							<img class="img-fluid" src="img/IMG-20190318-WA0086.jpg" style="width: 500px; height: 600px;" alt="">
+						</div>
+						<div class="col-lg-6 about-right">
+							<h1>
+								The most beautiful day<br>
+								on the year
+							</h1>
+							<p>
+								inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that.
+							</p>
+<!-- 							<button class="submit-btn primary-btn mt-20 text-uppercase ">Hire me now<span class="lnr lnr-arrow-right"></span></button>
+ -->
+ 						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End About Area -->
+
+			<div class="whole-wrap">
+				<div class="container">
+					<div class="section-top-border" id="gallery">
+					<div class="row justify-content-center">
+						<div class="col-md-8 pb-30 header-text">
+							<h1 class="">Sabrina's picture</h1>
+							<p>
+								<!-- <hr /> -->
+								Here some pictures of my wonderful girlfriend
+							</p>
+						</div>
+					</div>
+					<div class="gal">
+						<a href="img/p1.jpg"><img src="img/p1.jpg" alt=""></a>
+						<a href="img/p2.jpg"><img src="img/p2.jpg" alt=""></a>
+						<a href="img/p3.jpg"><img src="img/p3.jpg" alt=""></a>
+						<a href="img/p4.jpg"><img src="img/p4.jpg" alt=""></a>
+						<a href="img/p5.jpg"><img src="img/p5.jpg" alt=""></a>
+						<a href="img/p6.jpg"><img src="img/p6.jpg" alt=""></a>
+						<a href="img/p7.jpg"><img src="img/p7.jpg" alt=""></a>
+						<a href="img/p8.jpg"><img src="img/p8.jpg" alt=""></a>
+						<a href="img/p9.jpg"><img src="img/p9.jpg" alt=""></a>
+						<a href="img/p10.jpg"><img src="img/p10.jpg" alt=""></a>
+						<a href="img/p11.jpg"><img src="img/p11.jpg" alt=""></a>
+						<a href="img/p12.jpg"><img src="img/p12.jpg" alt=""></a>
+						<a href="img/p13.jpg"><img src="img/p13.jpg" alt=""></a>
+						<a href="img/p14.jpg"><img src="img/p14.jpg" alt=""></a>
+						<a href="img/p15.jpg"><img src="img/p15.jpg" alt=""></a>
+						<a href="img/p16.jpg"><img src="img/p16.jpg" alt=""></a>
+										
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- Start callto Area -->
+			<section class="callto-area pt-50 pb-50">
+				<div class="container">
+					<div class="row">
+						 <div class="col-lg-9 callto-left">
+						 	<h1 class="text-uppercase">I wish you a very great birthday</h1>
+						 </div>
+						 <div class="col-lg-3 callto-right">
+						 	<a href="https://antointbt.github.io/SabrinaBirthday/birthday/index.html" class="btn-white btn text-uppercase">Press here</a>
+						 </div>
+					</div>
+				</div>	
+			</section>
+			<!-- End callto Area -->
+
+ 			<!-- Start blog Area -->
+<!--			<section class="blog-area section-gap" id="blog">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 pb-30 header-text">
+							<h1>Our Recent Blogs</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+					<div class="row">	
+						<div class="single-blog col-lg-4 col-md-4">
+
+							<img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
+							<h4>
+								<a href="#">Portable Fashion for young women</a>
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
+								 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							</p>
+							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+								<div>
+									<img class="img-fluid" src="img/user.png" alt="">
+									<a href="#"><span>Mark Wiens</span></a>
+								</div>
+								<div class="meta">
+									13th Dec
+									<span class="lnr lnr-heart"></span> 15
+									<span class="lnr lnr-bubble"></span> 04
+								</div>
+							</div>
+						</div>
+						<div class="single-blog col-lg-4 col-md-4">
+							<img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
+							<h4>
+								<a href="#">Summer ware are coming</a>
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
+ 								commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							</p>
+							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+								<div>
+									<img class="img-fluid" src="img/user.png" alt="">
+									<a href="#"><span>Mark Wiens</span></a>
+								</div>
+								<div class="meta">
+									13th Dec
+									<span class="lnr lnr-heart"></span> 15
+									<span class="lnr lnr-bubble"></span> 04
+								</div>
+							</div>
+						</div>
+						<div class="single-blog col-lg-4 col-md-4">
+							<img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
+							<h4>
+								<a href="#">Summer ware are coming</a>
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+							</p>
+							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+								<div>
+									<img class="img-fluid" src="img/user.png" alt="">
+									<a href="#"><span>Mark Wiens</span></a>
+								</div>
+								<div class="meta">
+									13th Dec
+									<span class="lnr lnr-heart"></span> 15
+									<span class="lnr lnr-bubble"></span> 04
+								</div>
+							</div>
+						</div>												
+					</div>
+				</div>	
+			</section> -->
+			<!-- end blog Area -->	
+
+			<!-- Start contact Area -->
+			<section class="contact-area section-gap" id="loveYou">
+				<div class="container-fluid">
+					<div class="row d-flex justify-content-end align-items-center">
+						<div class="col-lg-5 col-md-12 contact-left no-padding">
+							<img class="img-fluid" src="img/img_A+S_2.jpg" style="margin-left: 100px; width: 650px;" alt="">
+						</div>
+						<div class="col-lg-7 col-md-12 contact-right no-padding">
+							<h1>My love</h1>
+							<p style="font-size: 18px;">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.
+							</p>
+							<p style="margin-top: 100px; font-size: 16px;">
+								If you love me, and I am handsome
+							</p>
+							<button class="submit-btn primary-btn mt-20 text-uppercase ">Click here<span class="lnr lnr-arrow-right"></span></button>
+							</div>
+						</div>						
+					</div>
+				</div>	
+			</section>
+			<!-- End contact Area -->
+
+			<!-- start footer Area -->		
+			<footer class="footer-area">
+				<div class="container">
+					<div class="row footer-bottom d-flex justify-content-between">
+						<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2018 All rights reserved</p>
+<!-- 						<div class="col-lg-4 col-sm-12 footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+ -->
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->		
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script type="text/javascript" src="js/simple-lightbox.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/main.js"></script>	
+			
+			<div style="display: none;">
+				<div class="section-top-border">
+					<div class="row">
+						<div class="col-lg-3 col-md-4 mt-sm-30">
+							<div class="single-element-widget mt-30">
+								<h3 class="mb-30">Selectboxes</h3>
+								<div class="default-select" id="default-select"">
+									<select>
+										<option value="1">English</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
