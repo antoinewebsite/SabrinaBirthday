@@ -137,7 +137,6 @@ $('document').ready(function(){
 			$('#wish_message').fadeIn('slow');
 		});
 	});
-
 		
 	$('#wish_message').click(function(){
 		 vw = $(window).width()/2;
@@ -179,6 +178,7 @@ $('document').ready(function(){
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
+			$('#gift').fadeIn('slow');
 				});
 				
 			}
@@ -193,9 +193,8 @@ $('document').ready(function(){
 		msgLoop(0);
 		
 	});
+
+		$('#gift').click(function(){
+	});
+
 });
-
-
-
-
-//alert('hello');
